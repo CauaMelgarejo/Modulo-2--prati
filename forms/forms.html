@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Forms em HTML</title>
+</head>
+
+<body>
+    <div>
+        <h2>Formulário</h2>
+        <form>
+            <label>Nome completo</label>
+            <input type="text" placeholder="Digite seu nome completo">
+            
+            <label>Email</label>
+            <input type="email" placeholder="Digite seu E-mail">
+           
+            <label>Senha:</label>
+            <input type="password" placeholder="Digite sua senha">
+            <label>Gênero</label>
+            <label for="male">
+                <input type="radio" value="male" name="genero">Masculino
+            </label>
+            <label for="famale">
+                <input type="radio" value="female" name="genero">Feminino
+            </label>
+            <label for="other">
+                <input type="radio" value="other" name="genero">Outro
+            </label>
+          
+            <label>
+                <input type="checkbox" name="terms" required>Aceitas os termos de condições
+            </label>
+         
+            <label for="city">cidade:</label>
+            <select name="city">
+                <option value="">Selecione uma cidade</option>
+                <option value="Canoas">Canoas</option>
+                <option value="Gravataí">Gravataí</option>
+                <option value="Porto Alegre">Porto Alegre</option>
+                <option value="São Leopoldo">São Leopoldo</option>
+            </select>
+            <label>Dia de nascimento</label>
+            <input type="date">
+            <label>Anexe seu curriculo</label>
+            <input type="file">
+            
+            <label for="message">Mensagem</label>
+            <textarea name="message" rows="4" placeholder="Deixe sua mensagem"></textarea>
+           
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</body>
+
+</html>
