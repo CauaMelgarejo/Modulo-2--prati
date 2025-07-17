@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM e BOM</title>
+</head>
+<body>
+    <h1 id="titulo">Título original</h1>
+    <button id="btnAlterar">Alterar titulo</button>
+    <button id="btnAdicionar">Adicionar item</button>
+    <ul id="lista"></ul>
+    <script>  
+        const btn = document.getElementById('btnAlterar')
+        const titulo = document.getElementById('titulo')
+        btn.addEventListener('click', () =>{
+            titulo.textContent = 'Título Atualizado'
+        })
+        let contador = 1
+        btnAdicionar.addEventListener('click',()=>{
+            const item = document.createElement('li')
+        item.textContent = `Item ${contador++}`
+            lista.appendChild(item)
+        })
+    </script>
+</body>
+</html>
